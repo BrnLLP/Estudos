@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<TITLE>Resumo</TITLE>
+</HEAD>
+<BODY>
+<H1>Resumo de JavaScript</H1>
+<FORM name="nome">
+<label>Idade: </label>
+<input type="text" name="idade"/>
+<br>
+<label>Masculino</label>
+<input type="radio" name="genero" value="Masculino">
+<br>
+<label>Feminino</label>
+<input type="radio" name="genero" value="Feminino">
+<br>
+<label>Outro</label>
+<input type="radio" name="genero" value="Outro">
+<br>
+<input type="button" value="Enviar" onclick="funcao();">
+<br>
+<select name="opcoes">
+<option value="opcao1">Opção 1</option>
+<option value="opcao2">Opção 2</option>
+</select>
+
+</form>
+<div id="r"><div>
+<script>
+function funcao(){
+alert()
+var r=document.querySelector("#r");
+var op=document.nome.opcoes.value;
+r.innerHTML=op;
+}
+</script>
+</BODY>
+</HTML>
